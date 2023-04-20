@@ -17,6 +17,33 @@ suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 # 3 of Clubs
 # ...
 
+index = 0
+loop do
+    if index == ranks.size
+        break
+    end 
+
+    rank = ranks[index]
+        
+    puts "#{rank} of Clubs"
+
+index = index + 1
+end
+
+# #alternative code 2 below
+for rank in ranks
+    for suit in suits
+        #do something
+        puts “#{rank} of #{suit}”
+    end
+    end
+    
+# for rank in ranks
+#     # do something 
+#     puts "#{rank} of Clubs"
+# end
+
+
 # CHALLENGE
 # Deal a poker hand. Shuffle the deck and "deal" (i.e. display) a 5 card hand (i.e. 5 cards from the deck).
 # You will want to look at the documentation for Arrays: https://ruby-doc.org/core-2.7.0/Array.html
