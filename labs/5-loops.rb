@@ -30,11 +30,11 @@ loop do
 index = index + 1
 end
 
-# #alternative code 2 below
-for rank in ranks
-    for suit in suits
+# alternative code 2 below
+for suit in suits
+    for rank in ranks
         #do something
-        puts “#{rank} of #{suit}”
+        puts "#{rank} of #{suit}"
     end
     end
     
